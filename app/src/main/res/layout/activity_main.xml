@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imageee"
+    tools:context=".MainActivity">
+    <TextView
+    android:id="@+id/username1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Username"
+    android:textStyle="bold"
+    android:textSize="20dp"
+    android:textColor="@color/white"
+    />
+
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Enter Username Here"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="@drawable/edittextbackground"
+        android:layout_below="@+id/username1"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact1"
+        android:text="Contact Number"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@+id/editTextUsername"
+        android:textSize="20dp"
+    ></TextView>
+
+    <EditText
+        android:id="@+id/editTextContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittextbackground"
+        android:layout_below="@id/contact1"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="phone"
+        android:hint="Enter Contact Number Here"/>
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@id/editTextContactNumber"
+    />
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/edittextbackground"
+        android:layout_below="@id/email1"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="textEmailAddress"
+        android:hint="Enter Email Here "/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="150dp"
+        android:text="Submit"
+
+
+        />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/cardview_default_elevation"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/btnSubmit"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+      />
+</RelativeLayout>
